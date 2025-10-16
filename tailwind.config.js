@@ -1,0 +1,148 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+      },
+      colors: {
+        // Custom Purpose Paradigm Color Palette
+        primary: {
+          50: '#f7f7f7',
+          100: '#EFEFF2',
+          200: '#e0e0e3',
+          300: '#c8c8cc',
+          400: '#91999A',
+          500: '#1F1F1F',
+          600: '#1a1a1a',
+          700: '#151515',
+          800: '#101010',
+          900: '#0a0a0a',
+        },
+        accent: {
+          50: '#f4fef0',
+          100: '#e8fdd9',
+          200: '#d2fbb5',
+          300: '#b3f785',
+          400: '#9CFA45',
+          500: '#5AAD2B',
+          600: '#4a9023',
+          700: '#3d7520',
+          800: '#335e1f',
+          900: '#2c4f1e',
+        },
+        brown: {
+          50: '#faf9f8',
+          100: '#f5f2f1',
+          200: '#ebe5e3',
+          300: '#ddd4d1',
+          400: '#c9b8b3',
+          500: '#84625C',
+          600: '#75564f',
+          700: '#624943',
+          800: '#523e39',
+          900: '#453530',
+        },
+        gray: {
+          50: '#f9f9fa',
+          100: '#EFEFF2',
+          200: '#e4e4e7',
+          300: '#d1d1d6',
+          400: '#a1a1aa',
+          500: '#91999A',
+          600: '#71717a',
+          700: '#52525b',
+          800: '#3f3f46',
+          900: '#27272a',
+        },
+        success: {
+          50: '#f4fef0',
+          100: '#e8fdd9',
+          200: '#d2fbb5',
+          300: '#b3f785',
+          400: '#9CFA45',
+          500: '#5AAD2B',
+          600: '#4a9023',
+          700: '#3d7520',
+          800: '#335e1f',
+          900: '#2c4f1e',
+        },
+        warning: {
+          50: '#faf9f8',
+          100: '#f5f2f1',
+          200: '#ebe5e3',
+          300: '#ddd4d1',
+          400: '#c9b8b3',
+          500: '#84625C',
+          600: '#75564f',
+          700: '#624943',
+          800: '#523e39',
+          900: '#453530',
+        },
+        error: {
+          50: '#fef2f2',
+          100: '#fee2e2',
+          200: '#fecaca',
+          300: '#fca5a5',
+          400: '#f87171',
+          500: '#ef4444',
+          600: '#dc2626',
+          700: '#b91c1c',
+          800: '#991b1b',
+          900: '#7f1d1d',
+        },
+      },
+      spacing: {
+        // 8px grid system
+        '18': '4.5rem',
+        '88': '22rem',
+        '128': '32rem',
+      },
+      borderRadius: {
+        'xl': '0.75rem',
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
+      boxShadow: {
+        'premium': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+        'premium-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+        'premium-xl': '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-in-out',
+        'slide-up': 'slideUp 0.3s ease-out',
+        'slide-down': 'slideDown 0.3s ease-out',
+        'scale-in': 'scaleIn 0.2s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        slideDown: {
+          '0%': { transform: 'translateY(-10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.95)', opacity: '0' },
+          '100%': { transform: 'scale(1)', opacity: '1' },
+        },
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#374151',
+            fontWeight: '400',
+            lineHeight: '1.7',
+          },
+        },
+      },
+    },
+  },
+  plugins: [],
+};
